@@ -1,0 +1,112 @@
+{ "tableName": "FCT_CONTRACT_BASE_MM",
+  "columns": [
+    {
+      "colName": "state_date_id",
+      "colType": "DATE",
+      "columnClass" : "fixedValue",
+      "fixedVal": "01.02.2020"
+    },
+    {
+      "colName": "contract_type_id",
+      "colType": "INTEGER",
+      "colLength": 9,
+      "columnClass": "sequence",
+      "distValCnt": 5,
+      "startFrom": 10
+    },
+    {
+      "colName": "market_type_dm_id",
+      "colType": "INTEGER",
+      "colLength": 9,
+      "columnClass": "sequence",
+      "distValCnt": 5
+    },
+    {
+      "colName": "system_stack_dm_id",
+      "colType": "INTEGER",
+      "colLength": 9,
+      "columnClass": "sequence",
+      "distValCnt": 13
+    },
+    {
+      "colName": "service_provider_id",
+      "colType": "INTEGER",
+      "colLength": 9,
+      "columnClass": "sequence",
+      "distValCnt": 48
+    },
+    {
+      "colName": "contract_base_type_dm_id",
+      "colType": "INTEGER",
+      "colLength": 9,
+      "columnClass": "sequence",
+      "distValCnt": 5
+    },
+    {
+      "colName": "activation_date_id",
+      "colType": "DATE",
+      "columnClass" : "date",
+      "distValCnt": 8171
+    },
+    {
+      "colName": "product_dm_id",
+      "colType": "INTEGER",
+      "colLength": 9,
+      "columnClass": "sequence",
+      "distValCnt": 50567
+    },
+    {
+      "colName": "reseller_dm_id",
+      "colType": "INTEGER",
+      "colLength": 9,
+      "columnClass": "sequence",
+      "distValCnt": 5
+    },
+    {
+      "colName": "serving_reseller_dm_id",
+      "colType": "INTEGER",
+      "colLength": 9,
+      "columnClass": "sequence",
+      "distValCnt": 50567
+    },
+    {
+      "colName": "bus_party_dm_id",
+      "colType": "INTEGER",
+      "colLength": 9,
+      "columnClass": "sequence",
+      "distValCnt": 6009
+    },
+    {
+      "colName": "contract_id",
+      "colType": "INTEGER",
+      "colLength": 38,
+      "columnClass": "sequence"
+    },
+    {
+      "colName": "fct_m1",
+      "colType": "INTEGER",
+      "colLength": 18,
+      "pattern" : "[1-9]{7}"
+    },
+    {
+      "colName": "fct_m2",
+      "colType": "INTEGER",
+      "colLength": 18,
+      "pattern" : "[1-9]{7}"
+    },
+    {
+      "colName": "fct_m3",
+      "colType": "INTEGER",
+      "colLength": 18,
+      "pattern" : "[1-9]{7}"
+    },
+    {
+      "colName": "fct_m4",
+      "colType": "INTEGER",
+      "colLength": 18,
+      "pattern" : "[1-9]{7}"
+    }
+  ],
+  "createDDL": false,
+  "description": "table desc"
+}

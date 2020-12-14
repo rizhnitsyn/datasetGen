@@ -1,0 +1,129 @@
+{ "tableName": "REGTEST_NONE",
+  "columns": [
+    {
+      "colName": "regtest_id",
+      "colType": "INTEGER",
+      "columnClass": "sequence"
+    },
+    {
+      "colName": "source_system",
+      "colType": "VARCHAR",
+      "colLength": 20,
+      "pattern" :  "[a-zA-Z]{6}",
+      "distValCnt": 1
+    },
+    {
+      "colName": "source_entity",
+      "colType": "VARCHAR",
+      "colLength": 50,
+      "pattern" :  "[a-zA-Z]{10}",
+      "distValCnt": 1
+    },
+    {
+      "colName": "source_id",
+      "colType": "VARCHAR",
+      "colLength": 50,
+      "columnClass": "sequence"
+    },
+    {
+      "colName": "bus_party_name",
+      "colType": "VARCHAR",
+      "colLength": 200,
+      "columnClass" : "company_name"
+    },
+    {
+      "colName": "bus_party_desc",
+      "colType": "VARCHAR",
+      "colLength": 200,
+      "columnClass" : "company_name"
+    },
+    {
+      "colName": "bus_party_code",
+      "colType": "VARCHAR",
+      "colLength": 100,
+      "pattern" : "[1-9]{8}"
+    },
+    {
+      "colName": "customer_relation_start_dt",
+      "colType": "DATE",
+      "columnClass" : "date",
+      "distValCnt": 8023
+    },
+    {
+      "colName": "customer_type_id",
+      "colType": "INTEGER",
+      "columnClass" : "sequence",
+      "distValCnt": 13
+    },
+    {
+      "colName": "customer_type_name",
+      "colType": "VARCHAR",
+      "colLength": 100,
+      "columnClass" : "company_name",
+      "distValCnt": 13
+    },
+    {
+      "colName": "customer_type_desc",
+      "colType": "VARCHAR",
+      "colLength": 100,
+      "columnClass" : "company_name",
+      "distValCnt": 13
+    },
+    {
+      "colName": "customer_zip",
+      "colType": "VARCHAR",
+      "colLength": 20,
+      "columnClass" : "zip",
+      "distValCnt": 8281
+    },
+    {
+      "colName": "customer_city",
+      "colType": "VARCHAR",
+      "colLength": 150,
+      "columnClass" : "city",
+      "distValCnt": 9130
+    },
+    {
+      "colName": "customer_country_id",
+      "colType": "INTEGER",
+      "columnClass" : "sequence",
+      "distValCnt": 81
+    },
+    {
+      "colName": "customer_country_name",
+      "colType": "VARCHAR",
+      "colLength": 100,
+      "columnClass" : "country",
+      "distValCnt": 81
+    },
+    {
+      "colName": "customer_country_code",
+      "colType": "VARCHAR",
+      "colLength": 100,
+      "columnClass" : "country",
+      "distValCnt": 81
+    },
+    {
+      "colName": "customer_system_stack_id",
+      "colType": "INTEGER",
+      "columnClass" : "sequence",
+      "distValCnt": 7
+    },
+    {
+      "colName": "customer_system_stack_name",
+      "colType": "VARCHAR",
+      "colLength": 100,
+      "columnClass" : "company_name",
+      "distValCnt": 7
+    },
+    {
+      "colName": "customer_system_stack_desc",
+      "colType": "VARCHAR",
+      "colLength": 100,
+      "columnClass" : "company_name",
+      "distValCnt": 7
+    }
+  ],
+  "createDDL": false,
+  "description": "table desc"
+}

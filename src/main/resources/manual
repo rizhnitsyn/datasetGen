@@ -1,0 +1,15 @@
+possible options:
+- pattern: regular expressions: "[a-zA-Z1-9]{25}"
+- columnClasses :
+    - "sequence"
+    - "name"
+    - "zip"
+    - "address"
+    - "company_name"
+    - "date"
+    - "city"
+    - "country"
+    - "fixedValue"
+- distValCnt(number of distinct value in column) : 5
+- fixedVal: dfdf, 5
+- startFrom: for sequence

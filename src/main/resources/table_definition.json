@@ -1,0 +1,51 @@
+{ "tableName": "REGTEST_NONE",
+  "columns": [
+    {
+      "colName": "regtest_id",
+      "colType": "INTEGER",
+      "columnClass": "sequence",
+      "startFrom": 10000
+    },
+    {
+      "colName": "source_system",
+      "colType": "VARCHAR",
+      "colLength": 20,
+      "pattern" :  "[a-zA-Z]{6}",
+      "distValCnt": 1
+    },
+    {
+      "colName": "source_entity",
+      "colType": "VARCHAR",
+      "colLength": 50,
+      "pattern" :  "[a-zA-Z]{10}",
+      "distValCnt": 1
+    },
+    {
+      "colName": "source_id",
+      "colType": "VARCHAR",
+      "colLength": 50,
+      "columnClass": "sequence"
+    },
+    {
+      "colName": "regtest_dt",
+      "colType": "DATE",
+      "columnClass" : "date",
+      "distValCnt": 8023
+    },
+    {
+      "colName": "regtest_decimal",
+      "colType": "NUMBER",
+      "pattern" :  "[0-9]{6}\\.[0-9]{5}",
+      "distValCnt": 1500
+    },
+    {
+      "colName": "regtest_fk_id",
+      "colType": "INTEGER",
+      "columnClass" : "sequence",
+      "distValCnt": 10000,
+      "startFrom": 21501
+    }
+  ],
+  "createDDL": true,
+  "description": "table desc"
+}
